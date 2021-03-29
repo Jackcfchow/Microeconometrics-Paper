@@ -1,74 +1,54 @@
-# Course project template
+# Student project  (Nr. 3303229) : Replication of Bleakley & Chin (2010)
 
-This is a template for course projects. We use [GitHub Classroom](https://classroom.github.com) to administrate our student projects and so you need to sign up for a [GitHub Account](http://github.com).
+
+This GitHub repository contains a student's replication of Bleakley, Hoyt, and Chin, Aimee. 2010. Age at arrival, English proficiency, and social assimilation among US immigrants. American Economic Journal: Applied Economics, 2(1), 165-92.
 
 ## Project overview
+![Continuous Integration](https://github.com/HumanCapitalAnalysis/microeconometrics-course-project-Jackcfchow/workflows/Continuous%20Integration/badge.svg)
 
-Please ensure that a brief description of your project is included in the [README.md](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/README.md), which provides a proper citation of your baseline article. Also, please set up the following badges that allow to easily access your project notebook.
 
-<a href="https://nbviewer.jupyter.org/github/OpenSourceEconomics/ose-template-course-project/blob/master/example_project.ipynb"
+ Beakley and Chin (2010) discuss the effect of English proficiency on social assimilation between immigrants in the US. They show evidential support for English proficiency causing social integrations using 2000 census data. They borrow the physiological insight that children before certain ages are quicker learners in foregin languages. The empirical strategy employed is to use the age of arrival as an instrumental variable. 
+ 
+ In this notebook, we will replicate this study of Beakley and Chin. Apart from that, a discussion of the conceptual framework and robustness checks will be offered. Our analysis explores some conceptual and econometrics issues in the original study.
+
+The notebook can be viewed on nbviewer or mybinder by clicking on the two buttons below. 
+ 
+<a href="https://nbviewer.jupyter.org/github/HumanCapitalAnalysis/microeconometrics-course-project-Jackcfchow/blob/master/Project.ipynb"
    target="_parent">
    <img align="center"
   src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.png"
       width="109" height="20">
 </a>
-<a href="https://mybinder.org/v2/gh/OpenSourceEconomics/ose-template-course-project/master?filepath=example_project.ipynb"
+<a href="https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2FHumanCapitalAnalysis%2Fmicroeconometrics-course-project-Jackcfchow/eaeb32ad08e23ff72f8ebfbfdd98649ded63c5aa"
     target="_parent">
     <img align="center"
        src="https://mybinder.org/badge_logo.svg"
        width="109" height="20">
 </a>
 
-## Reproducibility
 
-To ensure full reproducibility of your project, please try to set up a [GitHub Actions CI](https://docs.github.com/en/actions) as your continuous integration service. An introductory tutorial for [conda](https://conda.io) and [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions) is provided [here](https://github.com/OpenSourceEconomics/ose-template-course-project/blob/master/tutorial_conda_actions.ipynb). While not at all mandatory, setting up a proper continuous integration workflow is an extra credit that can improve the final grade.
+## Structure of the jupyter notebook
 
-![Continuous Integration](https://github.com/OpenSourceEconomics/ose-template-course-project/workflows/Continuous%20Integration/badge.svg)
+The main content of the notebook is as follows. 
 
-In some cases you might not be able to run parts of your code on  [GitHub Actions CI](https://docs.github.com/en/actions) as, for example, the computation of results takes multiple hours. In those cases you can add the result in a file to your repository and load it in the notebook. See below for an example code.
+* 1. The theoretical background research and a brief data description. 
 
-```python
-# If we are running on GitHub Actions CI we will simply load a file with existing results.
-if os.environ.get("CI") == "true":
-  rslt = pkl.load(open('stored_results.pkl', 'br'))
-else:
-  rslt = compute_results()
+* 2. The instrumental variable strategy employed and the specification of the estimations, visiualized by a simple casusal graph. 
 
-# Now we are ready for further processing.
-...
-```
+* 3. Some assessment of the conceptual framework of the benchmark. (We put this part before the replication in order to make the criticism more comprehensible) 
 
-However, if you decide to do so, please be sure to provide an explanation in your notebook explaining why exactly this is required in your case.
+* 4. Our replication of the results, as well as some assessments of the IV results. 
 
-## Structure of notebook
+* 5. Several robustness checks and extensions based on the benchmark.  
 
-A typical project notebook has the following structure:
 
-* presentation of baseline article with proper citation and brief summary
+## Main References
 
-* using causal graphs to illustrate the authors' identification strategy
+* Bleakley, Hoyt, and Chin, Aimee. 2010. Age at arrival, English proficiency, and social assimilation among US immigrants. _American Economic Journal_: Applied Economics, 2(1), 165-92.
 
-* replication of selected key results
 
-* critical assessment of quality
+* Eisenhauer, Philipp. 2019. Course project template, _HumanCapitalAnalysis_, [https://github.com/HumanCapitalAnalysis/template-course-project](https://github.com/HumanCapitalAnalysis/template-course-project).
 
-* independent contribution, e.g. additional external evidence, robustness checks, visualization
 
-There might be good reason to deviate from this structure. If so, please simply document your reasoning and go ahead. Please use the opportunity to review other student projects for some inspirations as well.
-
-## Project Example
-
-The notebook [example_project.ipynb](https://github.com/OpenSourceEconomics/ose-template-course-project/blob/master/example_project.ipynb) contains an example project by [Annica Gehlen](https://github.com/amageh) from the 2019 iteration of the [OSE data science](https://github.com/OpenSourceEconomics/ose-course-data-science) class at Bonn University. It replicates the results from the following paper:
-
-* Lindo, J. M., Sanders, N. J., & Oreopoulos, P. (2010). [Ability, Gender, and Performance Standards: Evidence from Academic Probation](https://www.aeaweb.org/articles?id=10.1257/app.2.2.95). *American Economic Journal: Applied Economics*, 2(2), 95-117.
-
-Lindo et al. (2010) examine the effects of academic probation on student outcomes using a regression discontinuity design. The analysis is based on data from a large Canadian university and evaluates whether academic probation is successful in improving the performance of low scoring students. Consistent with a model of performance standards, the authors find that being placed on probation in the first year of university induces some students to drop out of school while it improves the grades of students who continue their studies. In a more general sense, academic probation can offer insights into how agents respond to negative incentives and the threat of punishment in a real-world context.
-
-## Frequently asked questions and answers
-
-* *Where can I look for publications that provide the data behind their research?* Some journals provide the data for their published articles as data supplements directly on their website. In addition, the [Replication Wiki](http://replication.uni-goettingen.de/wiki/index.php/Main_Page)  and the [Harvard Dataverse](https://dataverse.harvard.edu) compile a lot such information.
-
-* *What are other useful resources for research data?* There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use [here](https://www.mdrc.org/available-public-use-files) from the evaluation of public policy initiatives. More generally, [Google Dataset Search](https://datasetsearch.research.google.com) allows to look for all kinds of online data.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/OpenSourceEconomics/ose-template-course-project/blob/master/LICENSE)
-[![Continuous Integration](https://github.com/OpenSourceEconomics/ose-template-course-project/workflows/Continuous%20Integration/badge.svg)](https://github.com/OpenSourceEconomics/ose-template-course-project/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/LICENSE)
+[![Continuous Integration](https://github.com/HumanCapitalAnalysis/template-course-project/workflows/Continuous%20Integration/badge.svg)](https://github.com/HumanCapitalAnalysis/template-course-project/actions)
