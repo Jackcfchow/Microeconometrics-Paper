@@ -4,7 +4,7 @@
 This GitHub repository contains a student's replication of Bleakley, Hoyt, and Chin, Aimee. 2010. Age at arrival, English proficiency, and social assimilation among US immigrants. American Economic Journal: Applied Economics, 2(1), 165-92.
 
 ## Project overview
-![Continuous Integration](https://github.com/HumanCapitalAnalysis/microeconometrics-course-project-Jackcfchow/workflows/Continuous%20Integration/badge.svg)
+![Continuous Integration](https://github.com/Jackcfchow/Microeconometrics-Paper/workflows/Continuous%20Integration/badge.svg)
 
 
  Beakley and Chin (2010) discuss the effect of English proficiency on social assimilation between immigrants in the US. They show evidential support for English proficiency causing social integrations using 2000 census data. They borrow the physiological insight that children before certain ages are quicker learners in foregin languages. The empirical strategy employed is to use the age of arrival as an instrumental variable. 
