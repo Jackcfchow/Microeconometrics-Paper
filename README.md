@@ -51,4 +51,4 @@ The main content of the notebook is as follows.
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/LICENSE)
-[![Continuous Integration](https://github.com/HumanCapitalAnalysis/template-course-project/workflows/Continuous%20Integration/badge.svg)](https://github.com/HumanCapitalAnalysis/template-course-project/actions)
+[![Continuous Integration](https://github.com/Jackcfchow/Microeconometrics-Paper/actions/workflows/ci.yml/badge.svg)](https://github.com/Jackcfchow/Microeconometrics-Paper/actions/workflows/ci.yml)
