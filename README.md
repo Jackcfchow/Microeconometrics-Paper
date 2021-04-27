@@ -13,7 +13,7 @@ This GitHub repository contains a student's replication of Bleakley, Hoyt, and C
 
 The notebook can be viewed on nbviewer or mybinder by clicking on the two buttons below. 
  
-<a href="https://nbviewer.jupyter.org/github/HumanCapitalAnalysis/microeconometrics-course-project-Jackcfchow/blob/master/Project.ipynb"
+<a href="https://nbviewer.jupyter.org/github/Jackcfchow/Microeconometrics-Paper/blob/master/Project.ipynb"
    target="_parent">
    <img align="center"
   src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.png"
