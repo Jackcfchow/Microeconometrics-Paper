@@ -19,7 +19,7 @@ The notebook can be viewed on nbviewer or mybinder by clicking on the two button
   src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.png"
       width="109" height="20">
 </a>
-<a href="https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2FHumanCapitalAnalysis%2Fmicroeconometrics-course-project-Jackcfchow/eaeb32ad08e23ff72f8ebfbfdd98649ded63c5aa"
+<a href="https://mybinder.org/v2/gh/Jackcfchow/Microeconometrics-Paper/HEAD"
     target="_parent">
     <img align="center"
        src="https://mybinder.org/badge_logo.svg"
