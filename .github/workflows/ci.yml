@@ -20,4 +20,4 @@ jobs:
       run: |
         export PATH="$PATH:/usr/share/miniconda/bin"
         source .envrc
-        jupyter nbconvert --to html --execute --ExecutePreprocessor.timeout=120 *.ipynb
+        jupyter nbconvert --to html --execute --ExecutePreprocessor.timeout=10000 *.ipynb
